@@ -16,11 +16,11 @@ namespace Laboratorio1.Models
     {
         public int id { get; set; }
         public string Nombre { get; set; }
-        public Nullable<double> lab1 { get; set; }
-        public Nullable<double> lab2 { get; set; }
-        public Nullable<double> lab3 { get; set; }
-        public Nullable<double> par1 { get; set; }
-        public Nullable<double> par2 { get; set; }
-        public Nullable<double> par3 { get; set; }
+        public Nullable<decimal> lab1 { get; set; }
+        public Nullable<decimal> lab2 { get; set; }
+        public Nullable<decimal> lab3 { get; set; }
+        public Nullable<decimal> par1 { get; set; }
+        public Nullable<decimal> par2 { get; set; }
+        public Nullable<decimal> par3 { get; set; }
     }
 }

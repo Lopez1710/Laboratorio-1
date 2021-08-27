@@ -11,12 +11,12 @@
           </Key>
           <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Nombre" Type="varchar" MaxLength="50" />
-          <Property Name="lab1" Type="float" />
-          <Property Name="lab2" Type="float" />
-          <Property Name="lab3" Type="float" />
-          <Property Name="par1" Type="float" />
-          <Property Name="par2" Type="float" />
-          <Property Name="par3" Type="float" />
+          <Property Name="lab1" Type="decimal" Precision="5" Scale="2" />
+          <Property Name="lab2" Type="decimal" Precision="5" Scale="2" />
+          <Property Name="lab3" Type="decimal" Precision="5" Scale="2" />
+          <Property Name="par1" Type="decimal" Precision="5" Scale="2" />
+          <Property Name="par2" Type="decimal" Precision="5" Scale="2" />
+          <Property Name="par3" Type="decimal" Precision="5" Scale="2" />
         </EntityType>
         <EntityContainer Name="EstudianteModelStoreContainer">
           <EntitySet Name="TblNotasEstudiante" EntityType="Self.TblNotasEstudiante" Schema="dbo" store:Type="Tables" />
@@ -32,12 +32,12 @@
           </Key>
           <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="lab1" Type="Double" />
-          <Property Name="lab2" Type="Double" />
-          <Property Name="lab3" Type="Double" />
-          <Property Name="par1" Type="Double" />
-          <Property Name="par2" Type="Double" />
-          <Property Name="par3" Type="Double" />
+          <Property Name="lab1" Type="Decimal" Precision="5" Scale="2" />
+          <Property Name="lab2" Type="Decimal" Precision="5" Scale="2" />
+          <Property Name="lab3" Type="Decimal" Precision="5" Scale="2" />
+          <Property Name="par1" Type="Decimal" Precision="5" Scale="2" />
+          <Property Name="par2" Type="Decimal" Precision="5" Scale="2" />
+          <Property Name="par3" Type="Decimal" Precision="5" Scale="2" />
         </EntityType>
         <EntityContainer Name="EstudianteEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="TblNotasEstudiante" EntityType="Self.TblNotasEstudiante" />

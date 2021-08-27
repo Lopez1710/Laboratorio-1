@@ -27,16 +27,16 @@ namespace Laboratorio1.Controllers
             double nota2 = (lab2 * 0.40) + (par2 * 0.60);
             double nota3 = (lab3 * 0.40) + (par3 * 0.60);
 
-            ViewBag.Resultado = (nota1 + nota2 + nota3)/3;
+            ViewBag.Resultado = Convert.ToDecimal((nota1 + nota2 + nota3)/3);
             using (EstudianteEntities db = new EstudianteEntities())
             {
                 notas.Nombre = Nombre;
-                notas.lab1 = lab1;
-                notas.lab2 = lab2;
-                notas.lab3 = lab3;
-                notas.par1 = par1;
-                notas.par2 = par2;
-                notas.par3 = par3;
+                notas.lab1 = Convert.ToDecimal(lab1);
+                notas.lab2 = Convert.ToDecimal(lab2);
+                notas.lab3 = Convert.ToDecimal(lab3);
+                notas.par1 = Convert.ToDecimal(par1);
+                notas.par2 = Convert.ToDecimal(par2);
+                notas.par3 = Convert.ToDecimal(par3);
 
                 db.TblNotasEstudiante.Add(notas);
                 db.SaveChanges();
