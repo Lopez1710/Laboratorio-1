@@ -1,0 +1,41 @@
+﻿@model List<Laboratorio1.Models.TblNotasEstudiante>
+@{
+    ViewBag.Title = "Historial";
+}
+
+<h2>Historial</h2>
+
+<table class="table table-dark table-striped">
+    <thead>
+    <th>Nombre </th>
+    <th>Laboratorio 1 </th>
+    <th>Parcial 1 </th>
+    <th>Laboratorio 2 </th>
+    <th>Parcial 2 </th>
+    <th>Laboratorio 3 </th>
+    <th>Parcial 3 </th>
+    </thead>
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Nombre</td>
+
+                <td>@item.lab1</td>
+
+                <td>@item.par1</td>
+
+                <td>@item.lab2</td>
+
+                <td>@item.par2</td>
+
+                <td>@item.lab3</td>
+
+                <td>@item.par3</td>
+
+                 </tr>
+        }
+
+    </tbody>
+</table>
